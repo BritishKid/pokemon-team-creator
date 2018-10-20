@@ -17,24 +17,31 @@ public class PokemonRequestController {
     @Autowired
     private PokemonDao pokemonDao;
 
-//    @RequestMapping(path="/pokemon/name={pokemonName}")
-//    public String getPokemon(@PathVariable("pokemonName") String pokemonName, Model model) throws SQLException {
-//       return pokemonDao.getPokemonFromName(pokemonName).toHtml();
-//    }
-
     @RequestMapping(path="/pokemon/names={pokemonName}")
     public String getPokemon(@PathVariable("pokemonName") String[] pokemonNames, Model model) throws SQLException {
         List<Pokemon> pokemonList = pokemonDao.getPokemonFromList(pokemonNames);
+        StringBuilder stringBuilder = listToHtml(pokemonList);
+      return stringBuilder.toString();
+    }
+
+    private StringBuilder listToHtml(List<Pokemon> pokemonList) {
         StringBuilder stringBuilder = new StringBuilder();
         for (Pokemon pokemon: pokemonList) {
             stringBuilder.append(pokemon.toHtml());
             stringBuilder.append("<BR><BR>");
         }
-      return stringBuilder.toString();
+        return stringBuilder;
     }
 
     @RequestMapping(path="/pokemon/all")
     public List<String> getAllPokemon() throws SQLException {
         return pokemonDao.getAllPokemon();
+    }
+
+    @RequestMapping(path="/pokemon/random")
+    public String getRandomTeamPokemon() throws SQLException {
+        List<Pokemon> pokemonList = pokemonDao.getRandomPokemon();
+        StringBuilder stringBuilder = listToHtml(pokemonList);
+        return stringBuilder.toString();
     }
 }

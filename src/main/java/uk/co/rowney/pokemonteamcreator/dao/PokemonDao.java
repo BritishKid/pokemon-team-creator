@@ -4,6 +4,7 @@ import org.springframework.stereotype.Repository;
 import uk.co.rowney.pokemonteamcreator.model.EffortValue;
 import uk.co.rowney.pokemonteamcreator.model.Pokemon;
 
+import javax.xml.transform.Result;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -55,13 +56,34 @@ public class PokemonDao {
         return pokemonList;
     }
 
-    private List<String> getMoveListFromResultSet(ResultSet resultSet) throws SQLException {
+    public List<Pokemon> getRandomPokemon() throws SQLException {
+        statement = createConnection();
+        List<Pokemon> pokemonList = new ArrayList<>();
+        String sql = "SELECT * FROM POKEMON ORDER BY RAND() LIMIT 6";
+        ResultSet resultSet = statement.executeQuery(sql);
+
+        while (resultSet.next()){
+            Pokemon pokemon = new Pokemon();
+            pokemon.setId(resultSet.getInt("id"));
+            pokemon.setName(resultSet.getString("name"));
+            pokemon.setAbility(resultSet.getString("ability"));
+            pokemon.setHeldItem(resultSet.getString("heldItem"));
+            pokemon.setNature(resultSet.getString("nature"));
+            pokemon.setEffortValues(getEffortValuesFromResultSet(resultSet));
+            pokemon.setMoveList(getMoveListFromResultSet(resultSet));
+            pokemonList.add(pokemon);
+        }
+        return pokemonList;
+    }
+
+        private List<String> getMoveListFromResultSet(ResultSet resultSet) throws SQLException {
         List<String> moveList = new ArrayList<>();
         moveList.add(resultSet.getString("move1"));
         moveList.add(resultSet.getString("move2"));
         moveList.add(resultSet.getString("move3"));
         moveList.add(resultSet.getString("move4"));
         return moveList;
+
 
 
     };

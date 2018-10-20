@@ -231,4 +231,3 @@ values ('Decidueye', 'Decidueye', 'Overgrow', 'Decidium Z', 'Jolly', 252, 4, 0, 
 insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
 values ('Delphox', 'Delphox', 'Blaze', 'Grassium Z', 'Timid', 0, 0, 252, 4, 0, 252, 'Calm Mind', 'Fire Blast', 'Psychic', 'Grass Knot');
 
-
