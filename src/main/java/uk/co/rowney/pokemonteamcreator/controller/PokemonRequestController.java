@@ -28,7 +28,7 @@ public class PokemonRequestController {
         StringBuilder stringBuilder = new StringBuilder();
         for (Pokemon pokemon: pokemonList) {
             stringBuilder.append(pokemon.toHtml());
-            stringBuilder.append("<br>");
+            stringBuilder.append("<BR><BR>");
         }
       return stringBuilder.toString();
     }

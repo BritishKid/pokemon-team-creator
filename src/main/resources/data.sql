@@ -185,19 +185,50 @@ values ('Zapdos', 'Zapdos', 'Pressure', 'Electrium Z', 'Timid', 0, 4, 252, 0, 0,
 insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
 values ('Zygarde', 'Zygarde', 'Aura Break', 'Choice Band', 'Adamant', 252, 0, 0, 0, 4, 252, 'Thousand Arrows', 'Extreme Speed', 'Iron Tail', 'Outrage');
 
---OU Usable
-
-insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
-values ('Aerodactyl-M', 'Aerodactyl', 'Ability', 'Item', 'Nature', atk, def, spa, spd, hp, spe, 'move1', 'move2', 'move3', 'move4');
-
-insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
-values ('Name', 'Name', 'Ability', 'Item', 'Nature', atk, def, spa, spd, hp, spe, 'move1', 'move2', 'move3', 'move4');
-
-insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
-values ('Name', 'Name', 'Ability', 'Item', 'Nature', atk, def, spa, spd, hp, spe, 'move1', 'move2', 'move3', 'move4');
-
-insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
-values ('Name', 'Name', 'Ability', 'Item', 'Nature', atk, def, spa, spd, hp, spe, 'move1', 'move2', 'move3', 'move4');
-
 insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
 values ('Dragonite', 'Dragonite', 'Multiscale', 'Weakness Policy', 'Adamant', 252, 0, 0, 0, 4, 252, 'Extreme Speed', 'Dragon Claw', 'Dragon Dance', 'Flamethrower');
+
+--NU
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Accelgor', 'Accelgor', 'Stick Hold', 'Choice Specs', 'Timid', 0, 4, 252, 0, 0, 252, 'Bug Buzz', 'Focus Blast', 'Energy Ball', 'Spikes');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Aerodactyl', 'Aerodactyl', 'Unnerve', 'Choice Band', 'Jolly', 252, 80, 0, 0, 0, 176, 'Stone Edge', 'Earthquake', 'Pursuit', 'Aqua Tail');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Ambipom', 'Ambipom', 'Technician', 'Silk Scarf', 'Jolly', 252, 4, 0, 0, 0, 252, 'Fake Out', 'U-turn', 'Return', 'Knock Off ');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Audino-M', 'Audino', 'Regenerator', 'Audinite', 'Calm', 0, 4, 0, 252, 252, 0, 'Wish', 'Protect', 'Heal Bell', 'Dazzling Gleam');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Audino', 'Audino', 'Regenerator', 'Leftovers', 'Careful', 0, 8, 0, 252, 248, 0, 'Wish', 'Protect', 'Knock Off', 'Encore');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Blastoise-M', 'Blastoise', 'Rain Dish', 'Blastoisinite', 'Modest', 0, 0, 168, 0, 136, 204, 'Rapid Spin', 'Scald', 'Dark Pulse', 'Ice Beam');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Blastoise', 'Blastoise', 'Torrent', 'Leftovers', 'Bold', 0, 252, 0, 4, 252, 0, 'Scald', 'Toxic', 'Rapid Spin', 'Refresh');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Braviary', 'Braviary', 'Defiant', 'Leftovers', 'Careful', 0, 0, 0, 252, 172, 84, 'Bulk Up', 'Brave Bird', 'Substitute', 'Roost');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Cinccino', 'Cinccino', 'Skill Link', 'Choice Band', 'Jolly', 252, 4, 0, 0, 0, 252, 'Tail Slap', 'Bullet Seed', 'Knock Off', 'Rock Blast');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Clawitzer', 'Clawitzer', 'Mega Launcher', 'Choice Specs', 'Modest', 0, 4, 252, 0, 0, 252, 'Water Pulse', 'Ice Beam', 'Dark Pulse', 'Aura Sphere');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Comfey', 'Comfey', 'Triage', 'Fairium Z', 'Modest', 0, 0, 252, 0, 236, 20, 'Draining Kiss', 'Calm Mind', 'Taunt', 'Synthesis');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Cryogonal', 'Cryogonal', 'Levitate', 'Never-Melt Ice', 'Timid', 0, 0, 252, 4, 0, 252, 'Rapid Spin', 'Freeze-Dry', 'Toxic', 'Recover');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Decidueye', 'Decidueye', 'Overgrow', 'Decidium Z', 'Jolly', 252, 4, 0, 0, 0, 252, 'Swords Dance', 'Spirit Shackle', 'Leaf Blade', 'Shadow Sneak');
+
+insert into pokemon (searchName, name, ability, heldItem, nature, attack, defence, specialAttack, specialDefence, hitPoints, speed, move1, move2, move3, move4)
+values ('Delphox', 'Delphox', 'Blaze', 'Grassium Z', 'Timid', 0, 0, 252, 4, 0, 252, 'Calm Mind', 'Fire Blast', 'Psychic', 'Grass Knot');
+
+
